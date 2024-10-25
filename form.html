@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro - Lifetrack</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <main class="apresentacao">
+    <section class="apresentacao__logo">
+      <h1 class="apresentacao__titulo">Sistema de Organização</br> Pessoal com recomendações</h1>
+      <div class="apresentacao__imagens">
+        <img id="imagem1" class="apresentacao__imagem" src="assets/peep-sitting-4.png"
+          alt="Personagem masculino sentado">
+        <img id="imagem2" class="apresentacao__imagem" src="assets/peep-sitting-7.png"
+          alt="Personagem feminina sentada">
+      </div>
+    </section>
+    <form action="post">
+      <div class="apresentacao__login">
+        <h1 class="apresentacao__login__titulo">Cadastro de Usuário</h1>
+        <div class="apresentacao__login__inputs__cadastro">
+          <label class="apresentacao__login__label" for="nome">Nome</label>
+          <input class="apresentacao__login__input" name="nome" type="text" required>
+          <label class="apresentacao__login__label" for="email">E-mail</label>
+          <input class="apresentacao__login__input" name="email" type="email" required>
+          <label class="apresentacao__login__label" for="telefone">Telefone</label>
+          <input class="apresentacao__login__input" name="telefone" type="tel" placeholder="(XX) XXXXX-XXXX"
+            pattern="[0-9]{2} [0-9]{5}-[0-9]{4}">
+          <label class="apresentacao__login__label" for="data-nascimento">Data de Nascimento</label>
+          <input class="apresentacao__login__input" name="data-nascimento" type="date" required>
+          <label class="apresentacao__login__label" for="passwd">Senha</label>
+          <input class="apresentacao__login__input" type="password" name="passwd" required name="passwd" id="passwd">
+          <label class="apresentacao__login__label" for="confirm-passwd">Confirmar senha</label>
+          <input class="apresentacao__login__input" type="password" required name="confirm-passwd" id="passwd">
+
+        </div>
+        <button class="apresentacao__login__btn">Cadastrar</button>
+      </div>
+    </form>
+
+  </main>
+</body>
+
+</html>

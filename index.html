@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Login - Lifetrack</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
+
 <body>
     <main class="apresentacao">
         <section class="apresentacao__logo">
             <h1 class="apresentacao__titulo">Sistema de Organização</br> Pessoal com recomendações</h1>
             <div class="apresentacao__imagens">
-                <img id="imagem1" class="apresentacao__imagem" src="assets/peep-sitting-4.png" alt="Personagem masculino sentado">
-                <img id="imagem2" class="apresentacao__imagem" src="assets/peep-sitting-7.png" alt="Personagem feminina sentada">
+                <img id="imagem1" class="apresentacao__imagem" src="assets/peep-sitting-4.png"
+                    alt="Personagem masculino sentado">
+                <img id="imagem2" class="apresentacao__imagem" src="assets/peep-sitting-7.png"
+                    alt="Personagem feminina sentada">
             </div>
         </section>
         <form action="post">
@@ -27,15 +31,21 @@
                         <i class="fas fa-user"></i>
                     </div>
                     <label class="apresentacao__login__label" for="passwd">Senha</label>
-                    <div class="input-container">
+                    <div class="apresentacao__login__input__container">
                         <input class="apresentacao__login__input" type="password" name="passwd" id="passwd">
                         <i class="fas fa-eye-slash"></i>
                     </div>
+                    <a href="#" class="apresentacao__login__cadastro__link">Esqueceu a senha?</a>
                 </div>
                 <button class="apresentacao__login__btn">Entrar</button>
+                <div class="apresentacao__login__cadastro">
+                    <span>Não tem uma conta?<a class="apresentacao__login__cadastro__link" href="#"><strong>
+                                Cadastre-se</strong></a></span>
+                </div>
             </div>
         </form>
 
-        </main>
+    </main>
 </body>
+
 </html>
