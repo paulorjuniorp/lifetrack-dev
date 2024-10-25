@@ -6,6 +6,17 @@
     box-sizing: border-box;
 }
 
+:root {
+    --cor-primaria: #6A636A;
+    --cor-secundaria: #FFF;
+    --cor-terciaria: #e3bde7;
+    --cor-quaternaria: #fef5ff;
+    --cor-quainaria: #031c30;
+    --cor-quainaria: #031c30;
+    --cor-senaria: #667a8a;
+    --cor-hover: #888;
+}
+
 body {
     display: flex;
     height: 100vp;
@@ -143,7 +154,7 @@ body {
 
 /* CSS página home */
 
-.barra_lado {
+.barra__lado {
     background-color: #031C30;
     display: flex;
     width: 300px;
@@ -153,14 +164,14 @@ body {
     padding: 2% 0;
 }
 
-.barra_lado__items {
+.barra__lado__items {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin: 0 8px;
 }
 
-.barra_lado__item {
+.barra__lado__item {
     width: 100%;
     font-size: 22px;
     text-decoration: none;
@@ -172,15 +183,15 @@ body {
     border-radius: 10px;
 }
 
-.barra_lado__item.item__ativo {
+.barra__lado__item.item__ativo {
     background-color: #667A8A;
 }
 
-.barra_lado__item:hover {
+.barra__lado__item:hover {
     background-color: #888;
 }
 
-.barra_lado__item__sair {
+.barra__lado__item__sair {
     width: 100%;
     background-color: #667A8A;
     border: none;
