@@ -6,17 +6,6 @@
     box-sizing: border-box;
 }
 
-:root {
-    --cor-primaria: #6A636A;
-    --cor-secundaria: #FFF;
-    --cor-terciaria: #e3bde7;
-    --cor-quaternaria: #fef5ff;
-    --cor-quainaria: #031c30;
-    --cor-quainaria: #031c30;
-    --cor-senaria: #667a8a;
-    --cor-hover: #888;
-}
-
 body {
     display: flex;
     height: 100vp;
