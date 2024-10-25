@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Poetsen+One&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    box-sizing: border-box;
     display: flex;
+    height: 100vp;
     background-color: #6A636A;
     color: #FFF;
 }
@@ -18,15 +21,34 @@ body {
     margin: 6% 12%;
 }
 
+.apresentacao__titulo {
+    font-size: 64px;
+    font-family: "Akaya Kanadaka", system-ui;
+    margin-bottom: 83px;
+}
+
 .apresentacao__logo {
     display: flex;
     flex-direction: column;
 }
 
+.apresentacao__imagens {
+    display: flex;
+}
+
+#imagem1 {
+    width: 340px;
+    height: 425px;
+}
+
+#imagem2 {
+    width: 246px;
+    height: 438px;
+}
+
 .apresentacao__login {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     background-color: #FFF;
     color: #6A636A;
     width: 518px;
@@ -39,28 +61,56 @@ body {
     text-align: center;
     font-size: 24px;
     font-weight: 400;
+    font-family: "Poetsen One", sans-serif;
+    margin-top: 51px;
+    margin-bottom: 10px;
 }
 
 .apresentacao__login__subtitulo {
     font-size: 14px;
     font-weight: 200;
     text-align: center;
-    margin: 36px;
+    font-family: "Public Sans", sans-serif;
+    margin-bottom: 56px;
+}
+
+.apresentacao__login__label {
+    transition: .5s;
+    pointer-events: none;
+    font-family: "Public Sans", sans-serif;
+    margin-bottom: 10px;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .apresentacao__login__inputs {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0px auto;
+    margin: 31px auto;
     border: none;
 }
 
 .apresentacao__login__input {
     width: 280px;
-    height: 50px;
+    height: 25px;
     outline: 0;
+    background: transparent;
     border-width: 0 0 2px;
+    margin-bottom: 31px;
+}
+
+
+.input-container i {
+    position: absolute;
+    right: 10px;
+    top: 20%;
+    transform: translateY(-50%);
+    color: #888;
 }
 
 .apresentacao__login__btn {
@@ -72,4 +122,60 @@ body {
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* CSS página home */
+
+.barra_lado {
+    background-color: #031C30;
+    display: flex;
+    width: 300px;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.barra_lado__item {
+    width: 260px;
+    padding: 0 8px;
+}
+
+.container__principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.listagem__principal {
+    background-color: #FEF5FF;
+    color: #6A636A;
+    width: 1080px;
+    height: 772px;
+    padding: 100px 25px;
+}
+
+.cabecalho__busca {
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabecalho__busca {
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabecalho__busca__input {
+    width: 575px;
+    height: 58px;
+    background-color: #E3BDE7;
+    outline: 0;
+    border: none;
+    border-radius: 15px;
 }
