@@ -34,13 +34,10 @@
 
 body {
     display: flex;
-    flex-direction: column;
     align-items: center;
     background-color: #6A636A;
     min-height: 100vh;
     color: #FFF;
-    margin: 0;
-    padding: 0;
 }
 
 .apresentacao {
@@ -176,7 +173,7 @@ body {
 
 /* CSS página home */
 
-.barra_lado {
+.barra__lado {
     background-color: #031C30;
     display: flex;
     width: 18.75rem;
@@ -186,14 +183,14 @@ body {
     padding: 2% 0;
 }
 
-.barra_lado__items {
+.barra__lado__items {
     display: flex;
     flex-direction: column;
     gap: 0.625rem;
     margin: 0 8px;
 }
 
-.barra_lado__item {
+.barra__lado__item {
     width: 100%;
     font-size: 1.375rem;
     text-decoration: none;
@@ -205,15 +202,15 @@ body {
     border-radius: 10px;
 }
 
-.barra_lado__item.item__ativo {
+.barra__lado__item.item__ativo {
     background-color: #667A8A;
 }
 
-.barra_lado__item:hover {
+.barra__lado__item:hover {
     background-color: #888;
 }
 
-.barra_lado__item__sair {
+.barra__lado__item__sair {
     width: 100%;
     background-color: #667A8A;
     border: none;
@@ -223,7 +220,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 0 8px;
 }
 
 .listagem__principal {
