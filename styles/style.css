@@ -1,5 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Poetsen+One&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+@media (max-width: 1200px) {
+    .apresentacao {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .apresentacao__titulo {
+        font-size: 2.5rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    .apresentacao__login {
+        width: 90%;
+        max-width: 28.125rem;
+        margin: 0 auto;
+    }
+
+    #imagem1,
+    #imagem2 {
+        display: none;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,29 +34,35 @@
 
 body {
     display: flex;
-    height: 100vp;
+    flex-direction: column;
+    align-items: center;
     background-color: #6A636A;
+    min-height: 100vh;
     color: #FFF;
+    margin: 0;
+    padding: 0;
 }
 
 .apresentacao {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 3.125rem;
     width: 100vw;
+    max-width: 1200px;
     margin: 8% auto;
 }
 
 .apresentacao__titulo {
-    font-size: 64px;
+    font-size: 4rem;
     font-family: "Akaya Kanadaka", system-ui;
-    margin-bottom: 83px;
+    margin: 8%;
 }
 
 .apresentacao__logo {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .apresentacao__imagens {
@@ -38,42 +70,43 @@ body {
 }
 
 #imagem1 {
-    width: 340px;
-    height: 425px;
+    width: 21.25rem;
+    height: 26.56rem;
 }
 
 #imagem2 {
-    width: 246px;
-    height: 438px;
+    width: 15.375rem;
+    height: 27.375rem;
 }
 
-.apresentacao__login {
+.apresentacao__login form {
     display: flex;
     flex-direction: column;
     background-color: #FFF;
     color: #6A636A;
-    width: 450px;
+    width: 28.125rem;
+    max-width: 90vw;
     height: 100%;
-    gap: 10px;
+    gap: 0.625rem;
     border-radius: 10px;
     padding: 10%;
 }
 
 .apresentacao__login__titulo {
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
     font-family: "Poetsen One", sans-serif;
-    margin-top: 51px;
-    margin-bottom: 10px;
+    margin-top: 3.19rem;
+    margin-bottom: 0.625rem;
 }
 
 .apresentacao__login__subtitulo {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 200;
     text-align: center;
     font-family: "Public Sans", sans-serif;
-    margin-bottom: 56px;
+    margin-bottom: 3.5rem;
 }
 
 .apresentacao__login__label {
@@ -85,7 +118,7 @@ body {
 .apresentacao__login__input__container {
     position: relative;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     display: flex;
     justify-content: center;
     border-bottom: 1px solid #6A636A;
@@ -111,7 +144,7 @@ body {
 
 .apresentacao__login__input-container i {
     position: absolute;
-    right: 10px;
+    right: 0.625rem;
     top: 20%;
     transform: translateY(-50%);
     color: #888;
@@ -121,12 +154,12 @@ body {
     width: 100%;
     margin: 20px auto;
     background-color: #6A636A;
-    padding: 16px;
+    padding: 1rem;
     color: #FFF;
     border-radius: 5px;
     border: none;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 1rem;
     font-family: "Roboto", sans-serif;
 }
 
@@ -143,44 +176,44 @@ body {
 
 /* CSS página home */
 
-.barra__lado {
+.barra_lado {
     background-color: #031C30;
     display: flex;
-    width: 300px;
+    width: 18.75rem;
     height: 100vh;
     flex-direction: column;
     justify-content: space-between;
     padding: 2% 0;
 }
 
-.barra__lado__items {
+.barra_lado__items {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.625rem;
     margin: 0 8px;
 }
 
-.barra__lado__item {
+.barra_lado__item {
     width: 100%;
-    font-size: 22px;
+    font-size: 1.375rem;
     text-decoration: none;
     color: #FEF5FF;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0.625rem;
     padding: 10%;
     border-radius: 10px;
 }
 
-.barra__lado__item.item__ativo {
+.barra_lado__item.item__ativo {
     background-color: #667A8A;
 }
 
-.barra__lado__item:hover {
+.barra_lado__item:hover {
     background-color: #888;
 }
 
-.barra__lado__item__sair {
+.barra_lado__item__sair {
     width: 100%;
     background-color: #667A8A;
     border: none;
@@ -198,38 +231,38 @@ body {
     color: #6A636A;
     width: 80vw;
     height: 90vh;
-    padding: 60px 25px;
+    padding: 3.75rem 1.56rem;
     border-radius: 10px;
 }
 
 .cabecalho__busca {
-    height: 200px;
+    height: 12.5rem;
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 0.625rem;
 }
 
 .cabecalho__busca {
-    height: 200px;
+    height: 12.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .cabecalho__busca__input {
-    width: 575px;
-    height: 58px;
+    width: 36rem;
+    height: 3.625rem;
     background-color: #E3BDE7;
     outline: 0;
     border: none;
     border-radius: 15px;
-    padding: 20px;
-    font-size: 16px;
+    padding: 1.25rem;
+    font-size: 1rem;
 }
 
 .cabecalho__busca__btn {
-    width: 296px;
-    height: 112px;
+    width: 18.5rem;
+    height: 7rem;
     background-color: #FFF;
     text-align: center;
     display: flex;
@@ -237,7 +270,7 @@ body {
     align-items: center;
     font-family: "Roboto", sans-serif;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #3C3A2D;
     border-radius: 10px;
     border: 1px solid #dddcdd;
@@ -246,15 +279,15 @@ body {
 .listagem__principal__items {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 1.5625rem;
 }
 
 .listagem__principal__item {
     width: 100%;
-    height: 72px;
+    height: 4.5rem;
     background-color: #E3BDE7;
     border-radius: 15px;
-    padding: 16px 24px;
+    padding: 1rem 1.5rem;
     text-decoration: none;
 }
 
@@ -262,7 +295,7 @@ body {
     color: #3C3A2D;
     font-family: "Roboto", sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 /* CSS página cadastro*/
@@ -271,7 +304,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
+    gap: 0.625rem;
 }
 
 .apresentacao__login__inputs__cadastro input {
