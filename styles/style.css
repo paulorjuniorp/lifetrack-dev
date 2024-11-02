@@ -40,6 +40,10 @@ body {
     color: #FFF;
 }
 
+fieldset {
+    border: 0;
+}
+
 .apresentacao {
     display: flex;
     justify-content: center;
@@ -170,6 +174,9 @@ body {
     color: #6A636A;
 }
 
+.mensagem-erro {
+    color: red;
+}
 
 /* CSS página home */
 

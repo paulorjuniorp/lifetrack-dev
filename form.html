@@ -21,30 +21,51 @@
       </div>
     </section>
     <div class="apresentacao__login">
-      <form action="post">
+      <form class="principal__formulario" action="post">
 
         <h1 class="apresentacao__login__titulo">Cadastro de Usuário</h1>
         <div class="apresentacao__login__inputs__cadastro">
-          <label class="apresentacao__login__label" for="nome">Nome</label>
-          <input class="apresentacao__login__input" name="nome" type="text" required>
-          <label class="apresentacao__login__label" for="email">E-mail</label>
-          <input class="apresentacao__login__input" name="email" type="email" required>
-          <label class="apresentacao__login__label" for="telefone">Telefone</label>
-          <input class="apresentacao__login__input" name="telefone" type="tel" placeholder="(XX) XXXXX-XXXX"
-            pattern="[0-9]{2} [0-9]{5}-[0-9]{4}">
-          <label class="apresentacao__login__label" for="data-nascimento">Data de Nascimento</label>
-          <input class="apresentacao__login__input" name="data-nascimento" type="date" required>
-          <label class="apresentacao__login__label" for="passwd">Senha</label>
-          <input class="apresentacao__login__input" type="password" name="passwd" required name="passwd" id="passwd">
-          <label class="apresentacao__login__label" for="confirm-passwd">Confirmar senha</label>
-          <input class="apresentacao__login__input" type="password" required name="confirm-passwd" id="passwd">
+          <fieldset class="formulario__campo">
+            <label class="apresentacao__login__label" for="nome">Nome</label>
+            <input class="apresentacao__login__input" name="nome" type="text" required>
+            <span class="mensagem-erro"></span>
+          </fieldset>
+            <fieldset class="formulario__campo">
+            <label class="apresentacao__login__label" for="email">E-mail</label>
+            <input class="apresentacao__login__input" name="email" type="email" required>
+            <span class="mensagem-erro"></span>
+          </fieldset>
+            <fieldset class="formulario__campo">
+            <label class="apresentacao__login__label" for="telefone">Telefone</label>
+            <input class="apresentacao__login__input" name="telefone" type="tel" placeholder="(XX) XXXXX-XXXX"
+              pattern="[0-9]{2}[0-9]{9}">
+              <span class="mensagem-erro"></span>
+            </fieldset>
+          <fieldset class="formulario__campo">
+            <label class="apresentacao__login__label" for="nascimento">Data de Nascimento</label>
+            <input class="apresentacao__login__input" name="nascimento" type="date" required>
+            <span class="mensagem-erro"></span>
+          </fieldset>
+          <fieldset class="formulario__campo">
+            <label for="passwd">Senha</label>
+            <input class="apresentacao__login__input" type="password" id="passwd-form" name="passwdForm" required>
+            <span id="senha-erro" class="mensagem-erro"></span>
+          </fieldset>
+          <fieldset class="formulario__campo">
+            <label for="confirm-passwd">Confirmar senha</label>
+            <input class="apresentacao__login__input" type="password" name="passwdFormConfirm" id="passwd-confirm" required>
+            <span id="confirmacao-erro" class="mensagem-erro"></span>
+          </fieldset>
 
         </div>
-        <button class="apresentacao__login__btn">Cadastrar</button>
+        <button type="submit" class="apresentacao__login__btn">Cadastrar</button>
 
       </form>
     </div>
   </main>
+
+  <script src="js/script.js"></script>
+  <script src="js/form.js"></script>
 </body>
 
 </html>
