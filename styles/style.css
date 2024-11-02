@@ -24,6 +24,14 @@
     #imagem2 {
         display: none;
     }
+
+    .barra__lado {
+        width: 1rem;
+    }
+
+    .item__name {
+        display: none;
+    }
 }
 
 * {
