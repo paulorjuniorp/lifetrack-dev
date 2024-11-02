@@ -21,7 +21,7 @@
             </div>
         </section>
         <div class="apresentacao__login">
-            <form action="post">
+            <form id="loginForm">
 
                 <h1 class="apresentacao__login__titulo">Bem-vindo <strong>Persona</strong></h1>
                 <h2 class="apresentacao__login__subtitulo">Preencha os dados do login para acessar</h2>
@@ -29,13 +29,13 @@
                     <fieldset class="formulario__campo">
                         <label class="apresentacao__login__label" for="login">Usuário</label>
                             <input class="apresentacao__login__input" placeholder="Usuário" name="usuario" type="text" required>
-                            <span class="mensagem-erro"></span>
+                            <span class="mensagem-erro" id="emailErro"></span>
                     </fieldset>
                     <fieldset class="formulario__campo">
                         <label class="apresentacao__login__label" for="passwd">Senha</label>
                         <input class="apresentacao__login__input" type="password" placeholder="Senha" name="passwd"
                             id="passwd" required>
-                        <span class="mensagem-erro"></span>
+                        <span class="mensagem-erro" id="senhaErro"></span>
                     </fieldset>
                     <a href="#" class="apresentacao__login__cadastro__link">Esqueceu a senha?</a>
                 </div>

@@ -1,6 +1,5 @@
 const camposDoFOrmulario = document.querySelectorAll("[required]");
 const form = document.querySelector('.principal__formulario');
-console.log(camposDoFOrmulario);
 
 const tiposDeErro = [
     'valueMissing',
@@ -77,3 +76,39 @@ function verificaCampo(campo) {
         mensagemErro.textContent = "";
     }
 }
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("loginForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        const emailInserido = e.target.elements["usuario"].value;
+        const senhaInserida = e.target.elements["passwd"].value;
+
+        const dadosCadastro = JSON.parse(localStorage.getItem("cadastro"));
+        
+        const emailErro = document.getElementById("emailErro");
+        const senhaErro = document.getElementById("senhaErro");
+
+        emailErro.textContent = "";
+        senhaErro.textContent = "";
+
+        if (dadosCadastro) {
+            const emailCadastrado = dadosCadastro.email;
+            const senhaCadastrada = dadosCadastro.passwdForm;
+
+            if (emailInserido === emailCadastrado && senhaInserida === senhaCadastrada) {
+                window.location.href = "./organization.html";
+            } else {
+                if (emailInserido !== emailCadastrado) {
+                    emailErro.textContent = "E-mail incorreto.";
+                }
+                if (senhaInserida !== senhaCadastrada) {
+                    senhaErro.textContent = "Senha incorreta.";
+                }
+            }
+        } else {
+            emailErro.textContent = "Nenhum cadastro encontrado. Cadastre-se primeiro.";
+        }
+    });
+});

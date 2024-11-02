@@ -314,3 +314,23 @@ fieldset {
 .apresentacao__login__inputs__cadastro input {
     border-bottom: 1px solid #6A636A;
 }
+
+.img__constructor img{
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+[data-contexto="perfil"] {
+    .listagem__principal {
+        background-color: #E3BDE7;
+    }
+}
+
+[data-contexto="organization"] {
+    .listagem__principal {
+        background-color: #FEF5FF;
+    }
+}

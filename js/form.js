@@ -1,3 +1,5 @@
+const formulario = document.querySelector('[data-formulario]');
+
 document.addEventListener("DOMContentLoaded", function() {
     const senha = document.getElementById("passwd-form");
     const confirmacaoSenha = document.getElementById("passwd-confirm");
@@ -62,3 +64,20 @@ function validaIdade(dataNascimento) {
 
     return dataAtual >= dataMais13;
 }
+
+
+formulario.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const listaRespostas = {
+        "nome": e.target.elements["nome"].value,
+        "email": e.target.elements["email"].value,
+        "telefone": e.target.elements["telefone"].value,
+        "nascimento": e.target.elements["nascimento"].value,
+        "passwdForm": e.target.elements["passwdForm"].value,
+        "passwdFormConfirm": e.target.elements["passwdFormConfirm"].value
+    }
+
+    localStorage.setItem("cadastro", JSON.stringify(listaRespostas));
+    window.location.href = "./index.html";
+})
